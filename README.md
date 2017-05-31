@@ -9,3 +9,5 @@ L'objectif pour la cliente était de récolter des mails de personnes intéress�
 Animations SVG et animate + Bootstrap 4
 
 Formulaire mailChimp (fonctionne depuis un serveur en local)
+
+J'aimerais encore travailler le responsive. Supprimer l'effet parallax sur mobile etc.

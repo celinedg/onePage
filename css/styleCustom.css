@@ -1,0 +1,567 @@
+*{
+    box-sizing: border-box;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+body{
+    width: 100%;
+    height: auto;
+}
+
+header, main, section, footer{
+    padding: 2%;
+    width: 100%;
+    height: auto;
+}
+
+
+#how, #who, #contact{
+    padding: 0% 5% 5%;
+}
+
+/*header{
+    background-image: url(../img/atelier3.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: 100vh;
+    min-height: 768px;
+}*/
+
+.parallax { 
+    /* The image used */
+    background-image: url(../img/atelier3.jpg);
+
+    /* Set a specific height */
+    height: 100vh;
+    min-height: 768px;
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+#logoAnime{
+    width: 100% !important;
+    height: auto !important;
+    min-width: 80px;
+    max-width: 150px;
+    display: block;
+    margin: 0 auto;
+/*    background-color:rgba(255,255,255,.6);*/
+
+/*
+    border-radius: 50%;
+    border: solid black 1px;
+*/
+
+}
+
+#logoSvg{
+    width: 80px;
+    height: auto;
+}
+
+
+.linkLogoMobile{
+        display: none;
+}
+
+.linkLogoDesktop{
+        display: block;
+}
+
+
+   
+
+header ul{
+    padding: 0;
+    height: auto;
+    margin-bottom: 0;
+}
+
+header ul li{
+    display: inline-block;
+    list-style-type: none;
+    background-color: rgba(157,127,81,.8);
+    margin: 0 2%;
+    
+/*
+    background-image: url(./img/triangle.svg);
+    left:0;
+    top:0;
+    background-position: left;
+*/
+    
+}
+
+header ul li:last-of-type{
+    min-width: 79px;
+}
+
+
+
+header ul li:hover{
+    background-color: rgba(0, 0, 0, 0.80);    
+} 
+
+li:focus a, li:hover a{
+    color: #9d7f51 ;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+
+header ul li:last-of-type{
+    margin-right: 0px;
+}
+
+
+header ul li a{
+    display: block;
+    margin: 0 auto;
+    text-decoration: none;
+    color: black;
+    line-height: 1.8;
+    padding-top: 5px;
+}
+
+
+.catchline{
+    background-color: rgba(255,255,255,.7);
+    margin-top: 30vh;
+    padding: 1.5em 0;
+}
+
+
+header h1{
+    color: black;
+    font-weight: bolder;
+    font-style: normal;
+}
+
+header h1{
+    letter-spacing: 0.2em;
+}
+
+header span, header h4, h2{
+    color: #9d7f51;
+}
+
+header h4{
+    font-weight: bold;
+    margin-top: 2vh;
+}
+
+h2{
+    font-weight: bold;
+}
+
+
+/*HOW SECTION*/
+
+
+#how h1, #who h1, #contact h1{
+    color: #9d7f51;
+    text-align: center;
+    margin: 3% 0;
+}
+
+#how h1 small, #who h1 small, #contact h1 small{
+    color: black;
+}
+
+#how .container-fluid>div:last-of-type{
+    margin-top: 2%;
+}
+
+#how img, #how svg, #how canvas{
+    width: 33% !important;
+    height: auto !important;
+    display: block;
+    margin: 0 auto;
+    max-width: 150px;
+    min-width: 100px;
+}
+
+
+@keyframes rotateTime{
+    0%   { transform: rotateZ(0deg);}
+    100% { transform: rotateZ(-360deg);}
+}
+
+
+@-webkit-keyframes rotateTime{
+    0%   { -webkit-transform: rotateZ(0deg);}
+    100% { -webkit-transform: rotateZ(-360deg);}
+}
+
+
+@-moz-keyframes rotateTime{
+    0%   { -moz-transform: rotateZ(0deg);}
+    100% { -moz-transform: rotateZ(-360deg);}
+}
+
+
+@-o-keyframes rotateTime{
+    0%   { -o-transform: rotateZ(0deg);}
+    100% { -o-transform: rotateZ(-360deg);}
+}
+
+
+@-ms-keyframes rotateTime{
+    0%   { -ms-transform: rotateZ(0deg);}
+    100% { -ms-transform: rotateZ(-360deg);}
+}
+
+
+#divTime:hover .minutes{
+    
+    transform-origin: 44.5px 44.5px;
+    -moz-transform-origin:  44.5px 44.5px;
+    
+    animation: rotateTime 2s linear infinite;
+    -webkit-animation: rotateTime 2s linear infinite;
+    -moz-animation: rotateTime 2s linear infinite;
+    -o-animation: rotateTime 2s linear infinite;
+    -ms-animation: rotateTime 2s linear infinite;
+}
+
+#divTime:hover .hours{
+    transform-origin: 44.5px 44.5px;
+    -moz-transform-origin:  44.5px 44.5px;
+    
+    animation: rotateTime 60s linear infinite;
+    -webkit-animation: rotateTime 60s linear infinite;
+    -moz-animation: rotateTime 60s linear infinite;
+    -o-animation: rotateTime 60s linear infinite;
+    -ms-animation: rotateTime 60s linear infinite;
+}
+
+
+#how h3, #who h3, #contact h3{
+    line-height: 1.3;
+    color: grey;
+}
+
+#how h3{
+    margin: 30px 0px;
+}
+
+#how h2, #how img, #how svg, #how canvas, .containerSvg{
+    margin-top: 30px;
+    margin-bottom: 0px;
+}
+
+
+#divBeautiful:hover .tada {
+  animation: tada 3.6s linear 1;
+  transform-origin: 50% 50%;
+}
+
+@keyframes tada {
+  0% { transform: scale(1) }
+  5.55556% { transform:scale(.9) rotate(-8deg) }
+  11.11111% { transform:scale(.9) rotate(-8deg) }
+  16.66667% { transform:scale(1.3) rotate(8deg) }
+  22.22222% { transform:scale(1.3) rotate(-8deg) }
+  27.77778% { transform:scale(1.3) rotate(8deg) }
+  33.33333% { transform:scale(1.3) rotate(-8deg) }
+  38.88889% { transform:scale(1.3) rotate(8deg) }
+  44.44444% { transform:scale(1) rotate(0) }
+  100% { transform:scale(1) rotate(0) }
+}
+
+#who span{
+    text-align: center !important;
+}
+
+#presentationLesDesigners, #presentationDesigner{
+    margin-top: 5%;
+}
+
+.titreDesign{
+    height: auto;
+    position: relative;
+}
+
+
+#presentationDesigner .titreDesign h2, #presentationLesDesigners .titreDesign h2{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 25%;
+    z-index: 2;
+}
+
+.textDesign h3{
+    margin-bottom: 0;
+}
+
+
+#presentationDesigner img, #presentationLesDesigners img{
+    transition-property: translateX;
+    transition-duration: 0.3s;
+    transition-timing-function: ease-in;
+}
+
+#presentationDesigner:hover img{
+    transform: translateX(30%);
+    
+}
+
+#presentationLesDesigners:hover img{
+    transform: translateX(-30%);
+}
+
+
+@media screen and (max-width: 767px){
+    #presentationDesigner .titreDesign h2, #presentationLesDesigners .titreDesign h2{
+        top: 25%;
+        transform: translateX(-50%);
+        left: 50%;
+        z-index: 2;
+    }
+    
+    picture{
+        display: block;
+        width: 100%;
+        height: auto;
+    }
+    
+    #presentationDesigner picture{
+        transform: rotate(90deg);
+    }
+    
+    #presentationLesDesigners picture{
+        transform: rotate(-90deg);
+    }
+    
+    
+    #presentationDesigner:hover img{
+    transform: translateX(10%);
+    }
+
+    #presentationLesDesigners:hover img{
+    transform: translateX(-10%);
+    }
+    
+}
+
+/*CONTACT*/
+
+#contact h3{
+    margin-bottom: 2em;
+}
+
+#mc_embed_signup{background:#fff; clear:left; font:14px 'Josefin Sans', sans-serif; width:80%;}
+
+#mc_embed_signup #mce-EMAIL, #mc_embed_signup #mc-embedded-subscribe{
+    font-family:'Josefin Sans', sans-serif;
+    border-radius: 0px;
+}
+
+#mc_embed_signup #mce-EMAIL{
+    border: 1px solid rgba(157,127,81,1);
+    margin-right: 2%;
+    font-size: 20px;
+    
+}
+
+#mc_embed_signup #mc-embedded-subscribe{
+   background-color: rgba(157,127,81,1);
+   color: white;
+   margin-left: 2%;
+   font-size: 18px;
+   line-height: 2;
+}
+
+#mc_embed_signup #mc-embedded-subscribe:hover{
+   background-color: white;
+   color: rgba(157,127,81,1);
+}
+
+#contact h3 span{
+    color: rgba(157,127,81,1);
+}
+
+
+footer{
+    background-color: rgba(157,127,81,1);
+    margin-top: 5%;
+}
+
+#copy:before{
+    content:"\0000A9";
+    font-size: 30px;
+    color: white;
+    vertical-align: middle;
+}
+
+
+footer a{
+    color: white;
+    font-size: 18px;
+}
+
+footer a:hover{
+    text-decoration: none;
+    font-weight: bold;
+    color: white;
+}
+
+
+#stickyButton{
+/*
+    position:absolute;
+    top: 768px;
+    right: 5px;
+*/
+    display: block;
+    text-align: center;
+    padding: 0.2em 0.5em;
+/*    width: 10%;*/
+    transform: rotate(90deg);
+    transform-origin: 95% 80%;
+    background-color: rgba(157,127,81,1);
+    color: white;
+    margin-top: 20%;
+        min-width: 85px;
+    padding-top: 5px;
+}
+
+#stickyButton:hover{
+    color: rgba(157,127,81,1);
+    background-color: white;
+    text-decoration: none;
+}
+
+
+@media screen and (max-width: 768px){
+    
+.textDesign h3 {
+    margin-bottom: 1em;
+    }
+    
+h1{
+    font-size: 35px;    
+    }
+    
+h2{
+    font-size: 30px;
+    }
+    
+h3{
+    font-size: 26px;
+    }
+    
+    
+ #mc_embed_signup #mce-EMAIL{
+        width: 50%;
+    }    
+    
+ #mc_embed_signup #mc-embedded-subscribe{
+        margin-left: 0%;
+        margin-top: 2%;
+        width: 20%;
+    }
+    
+#stickyButton{
+    transform-origin: 80% 150%;
+}
+
+@media screen and (max-width: 575px){
+    
+    .catchline {
+    padding: 1.5em 0 0;
+    }
+    
+    .linkLogoMobile{
+        display: block;
+    }
+    
+    .linkLogoDesktop{
+        display: none;
+    }
+    
+    header{
+    background-image: url(../img/atelier3.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: auto;
+    min-height: 0px;
+    }
+    
+    
+    header ul{
+        margin-top: 10%;
+        margin-bottom: 10%;
+    }
+    
+    header ul li{
+    background-color: rgba(157,127,81,1);
+    }
+    
+    header ul li a{
+        color: white;
+    }
+    
+    header ul li:last-of-type{
+        display: none;
+    }
+    
+    .catchline {
+    margin-top: 5vh;
+    }
+    
+    h1{
+    font-size: 30px;    
+    }
+    
+    h2{
+    font-size: 26px;
+    }
+    
+    h3{
+    font-size: 22px;
+    }
+    
+    #mc_embed_signup #mce-EMAIL{
+        width: 80%;
+    }
+    
+    #mc_embed_signup #mc-embedded-subscribe{
+        margin-left: 0%;
+        margin-top: 2%;
+        width: 30%;
+    }
+    
+    #contact h3 {
+    margin-bottom: 0em;
+    }
+    
+    stickyPlugin > div:first-of-type{
+        height: 10px;
+    }
+    
+    #stickyButton{
+        transform-origin: 70% 105%;
+    }
+    
+    #stickyPlugin > div{
+       height: 10px;  
+    }
+}
+
+
+
+
+
+
+
+
+
